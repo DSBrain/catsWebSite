@@ -1,83 +1,122 @@
+/* Réinitialisation des styles par défaut */
 body {
+    /* Utilisation de la police de caractères Arial ou sans-serif */
     font-family: Arial, sans-serif;
+    /* Suppression des marges extérieures */
     margin: 0;
+    /* Suppression des espacements internes */
     padding: 0;
+    /* Couleur de fond du corps de la page */
     background-color: #fff;
+    /* Couleur du texte */
     color: #333;
+    /* Transition fluide pour les changements de couleur de fond et de texte */
     transition: background-color 0.5s, color 0.5s;
 }
 
+/* Styles de l'en-tête */
 header {
+    /* Couleur de fond de l'en-tête */
     background-color: #f2f2f2;
+    /* Espacement interne de l'en-tête */
     padding: 20px;
+    /* Affichage en ligne des éléments et espacement équitable entre eux */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Styles du contenu principal */
 main {
+    /* Espacement interne du contenu principal */
     padding: 20px;
 }
 
+/* Styles des titres */
 h1, h2 {
+    /* Couleur du texte des titres */
     color: #333;
 }
 
+/* Styles des boutons */
 button {
+    /* Espacement interne du bouton */
     padding: 10px 20px;
+    /* Couleur de fond du bouton */
     background-color: #333;
+    /* Couleur du texte du bouton */
     color: #fff;
+    /* Suppression de la bordure du bouton */
     border: none;
+    /* Curseur personnalisé pour indiquer l'interaction */
     cursor: pointer;
 }
 
+/* Styles des sections */
 section {
+    /* Marge en bas des sections */
     margin-bottom: 20px;
 }
 
-/* Dark Mode */
+/* Styles du pied de page */
+footer {
+    /* Couleur de fond du pied de page */
+    background-color: #f2f2f2;
+    /* Espacement interne du pied de page */
+    padding: 10px 20px;
+    /* Marge en haut automatique pour aligner le pied de page en bas de la page */
+    margin-top: auto;
+}
+
+/* Styles du mode sombre */
 body.dark-mode {
+    /* Couleur de fond en mode sombre */
     background-color: #333;
+    /* Couleur du texte en mode sombre */
     color: #f2f2f2;
 }
 
 body.dark-mode header {
+    /* Couleur de fond de l'en-tête en mode sombre */
     background-color: #444;
 }
 
 body.dark-mode footer {
+    /* Couleur de fond du pied de page en mode sombre */
     background-color: #444;
 }
-body.dark-mode h1, body.dark-mode h2 {
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    /* Couleur du texte des titres en mode sombre */
     color: #f2f2f2;
 }
 
-footer{
-    background-color: #f2f2f2;
-    padding: 10px 20px;
-    margin-top: auto;
-}
-
-/* Responsive Design */
+/* Conception responsive */
 @media only screen and (max-width: 600px) {
+    /* Disposition en colonne de l'en-tête pour les écrans étroits */
     header {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    /* Espacement supplémentaire en haut des boutons pour les écrans étroits */
     button {
         margin-top: 10px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    /* Réduction de l'espacement interne du contenu principal pour les écrans moyennement étroits */
     main {
         padding: 10px;
     }
 }
 
-/* Fixed Dimensions for Images */
+/* Styles d'image */
 img {
-    width: 275px;
-    height: 550px;
+    /* Largeur maximale de l'image */
+    max-width: 100%;
+    /* Hauteur automatique pour maintenir les proportions de l'image */
+    height: auto;
 }
